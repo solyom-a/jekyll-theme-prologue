@@ -6,6 +6,15 @@
 <!-- Nav -->
 <nav id="nav">
   <ul>
+            <li><a href="https://timeglance.solyoma.dev" id="{{- _slug -}}-link">
+            <span class="icon fa-clock">TimeGlance</span>
+          </a></li>
+             <li><a href="https://dateglance.solyoma.dev" id="{{- _slug -}}-link">
+            <span class="icon fa-calendar-alt">DateGlance</span>
+          </a></li>
+        <li><a href="https://healthglance.solyoma.dev" id="{{- _slug -}}-link">
+            <span class="icon fa-heart">HealthGlance</span>
+          </a></li>
     {%- assign _pages = site.html_pages | where_exp: "page", "page.hide != true" -%}
     {%- unless _pages == null -%}
       {%- assign _pages = _pages | sort: 'order' -%}
